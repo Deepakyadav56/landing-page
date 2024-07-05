@@ -1,0 +1,71 @@
+   .features {
+    background-image: url("../../../../public/assets/multiuniverse.png");
+    background-size: cover;
+    background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      /* background: #e0e5ec; */
+      text-align: center;
+      color: #333;
+      padding: -33rem;
+    }
+
+    .container {
+      padding-top: 0rem;
+      
+
+    }
+    
+    .glass-tile {
+      position: relative;
+      padding: 1rem;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      color: #fff;
+      text-align: center;
+      overflow: visible; /* Ensures the icon can come out of the tile */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .glass-tile h5 {
+      margin-top: 40px;
+    }
+    
+    .glass-tile p {
+      margin-top: 10px;
+    }
+    
+    .icon-container {
+      position: absolute;
+      top: -30px; /* Adjust this value as needed */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 60px;
+      font-size: small;
+      background: rgba(255, 255, 255, 0.25);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .icon-container i {
+      font-size: 30px;
+      color: #fff;
+    }
+    
+    .glass-tile:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+    

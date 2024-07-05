@@ -1,0 +1,48 @@
+/* .banner {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('../../../../public/assets/whiterobot.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+  } */
+  
+  .banner-content {
+    background-image: url("../../../../public/assets/whiterobot.png");
+    background-size: cover;
+    background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      border:2px solid wheat;
+      border-radius: 20px;
+      /* background: #e0e5ec; */
+      text-align: center;
+      color: #333;
+    }
+    
+
+    /* Keyframes for typing animation */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Blinking cursor animation */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+/* Apply animation to the typing-text element */
+#typing-text {
+  overflow: hidden; /* Ensures text doesn't overflow */
+  border-right: .15em solid orange; /* Cursor for the typing effect */
+  white-space: nowrap; /* Keeps the text on one line */
+  margin: 0 auto; /* Centers the animation */
+  letter-spacing: .15em; /* Adds some spacing between characters */
+  animation:
+    typing 3.5s steps(60, end) infinite,
+    blink-caret .75s step-end infinite; /* Infinite repetition */
+}

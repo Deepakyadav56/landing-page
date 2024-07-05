@@ -1,0 +1,75 @@
+/* Navbar Container */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; /* Align items at the ends */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Increase padding for better touch area */
+  background-color: #000000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adjust shadow */
+}
+
+/* Logo Style */
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  border-radius: 20px;
+  border: 2px solid #aaa;
+  max-height: 40px; /* Adjust height as needed */
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+/* Links Container */
+nav .nav-links {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+/* Link Styles */
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 15px; /* Adjust padding */
+  margin: 5px; /* Adjust margin */
+  border-radius: 20px;
+  background-color: #161616;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1); /* Adjust shadow */
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+nav a:hover {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  color: #d1d1d1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack items vertically */
+    padding: 20px; /* Increase padding */
+  }
+
+  nav .logo {
+    margin: 5px 0; /* Adjust logo margin */
+  }
+
+  nav .nav-links {
+    flex-direction: row; /* Display links horizontally */
+    margin-top: 5px; /* Adjust top margin for links */
+  }
+
+  nav a {
+    padding: 8px 12px; /* Adjust link padding */
+    margin: 0 5px; /* Adjust link margin */
+    font-size: 0.9rem; /* Adjust font size */
+  }
+}

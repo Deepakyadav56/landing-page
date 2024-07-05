@@ -1,0 +1,67 @@
+.header-content {
+  background-image: url("../../../../public/assets/Homepage.png");
+  background-size: cover;
+  background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: #e0e5ec; */
+    text-align: center;
+    color: #333;
+  }
+  
+  .header-buttons {
+    margin-top: 20px;
+  }
+  
+  .btn-neumorphic {
+    border: none;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    background: #080808;
+    box-shadow: 2px 2px 4px #a3b1c6, -2px -2px 4px #ffffff;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+  }
+  
+  .btn-neumorphic:hover {
+    color: rgb(0, 132, 255);
+    background: #000000;
+    box-shadow: 1px 1px 2px #464646, -1px -1px 2px #616161;
+  }
+  
+  .btn-neumorphic span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  .btn-neumorphic::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* width: 300%;
+    height: 300%; */
+    background: #0062E6;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  
+  .btn-neumorphic:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+
+  

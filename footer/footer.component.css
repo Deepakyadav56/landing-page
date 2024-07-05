@@ -1,0 +1,121 @@
+/* footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+   */
+
+   .footer {
+    background-color: #222;
+    color: #fff;
+    padding: 50px 0;
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+   
+      /* .footer-image {
+            background-size: contain;
+        border-radius: 50px;
+        background-position: center;
+        border:2px solid rgb(90, 90, 90);
+        width: 100%; 
+        margin-bottom: 20px; 
+        transition: transform 0.3s ease;
+      }
+
+      .footer-image:hover {
+        transform: scale(1.1); 
+      } */
+
+      .footer-image {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height:80%;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  border: 2px solid rgb(90, 90, 90);
+  transition: transform 0.3s ease; /* Smooth scale transition on hover */
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start from outside the image on the left */
+    width: 200%; /* Double the width for movement */
+    height: 100%;
+    background: linear-gradient(to right, rgba(235, 4, 4, 0.3), transparent); /* Gradient for shining effect */
+    transition: left 0.5s ease; /* Transition left position */
+    z-index: 1; /* Ensure pseudo-element is above the image */
+  }
+
+  &:hover::before {
+    left: 100%; /* Move to the right */
+  }
+
+  &:hover {
+    transform: scale(1.1); /* Scale up on hover */
+  }
+}
+
+
+    .row {
+      margin-bottom: 20px;
+    }
+    h5 {
+      font-size: 20px;
+      color: #fff;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      li {
+        margin-bottom: 10px;
+        a {
+          color: #fff;
+          text-decoration: none;
+          transition: color 0.3s ease; /* Smooth color transition */
+          &:hover {
+            text-decoration: underline;
+            color: #1e90ff; /* Hover color */
+          }
+        }
+      }
+    }
+    .social-icons {
+      margin-top: 10px;
+      a {
+        color: #fff;
+        font-size: 24px;
+        margin-right: 15px;
+        transition: transform 0.3s ease; /* Smooth transform transition */
+        &:hover {
+          transform: scale(1.2); /* Scale up on hover */
+          opacity: 0.8;
+        }
+      }
+    }
+    .divider {
+      border-color: #444;
+      opacity: 0.5;
+    }
+    .text-center {
+      text-align: center;
+      p {
+        margin: 0;
+        font-size: 14px;
+      }
+    }
+  }
+  
