@@ -15,11 +15,11 @@
   .login-form {
     background: rgba(255, 255, 255, 0.1);
     padding: 4rem;
-    border-radius: 20px;
+    border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(30px);
-    color: #fff;
-    width: 400px;
+    color: #ffffff;
+    width: 350px;
   }
   
   .login-form h2 {
