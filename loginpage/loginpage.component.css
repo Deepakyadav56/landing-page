@@ -1,4 +1,4 @@
-.login-container {
+/* .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,4 +63,292 @@
   button:hover {
     background-color: #0056b3;
   }
+
+   */
+   
+   .head1{
+    color: #0056b3;
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+   }
+
+   .head2{
+    color:#ffffff;
+    font-family: "Inter", sans-serif;
+   }
+
+   .simple-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    will-change: transform;
   
+    &:hover {
+      background-color: #0056b3;
+      transform: translateY(-5px); /* Moves the button up */
+    }
+  }
+
+  
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .simple-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: default; /* Change cursor to default to indicate non-interactivity */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    will-change: transform;
+    pointer-events: none; /* Make the button non-clickable */
+  
+    /* Apply the floating animation */
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .simple-button:hover {
+    background-color: #0056b3; /* Change color on hover, even though it's non-clickable */
+  }
+  
+  
+
+
+   .card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* credit-card.component.scss */
+.credit-card-container {
+  perspective: 1000px;
+}
+
+.credit-card {
+  margin: 5%;
+
+  width: 300px;
+  height: 200px;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.credit-card.flipped {
+  transform: rotateY(180deg);
+}
+
+.credit-card-front,
+.credit-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.credit-card-front {
+  background: linear-gradient(115deg, #030303, #750280 , #13002c, #481688 ,#13002c);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.credit-card-back {
+  background: #333;
+  color: #fff;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-number {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.card-holder, .card-expiry, .card-cvv {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-holder label, .card-expiry label, .card-cvv label {
+  font-size: 12px;
+  color: #bbb;
+}
+
+.card-holder div, .card-expiry div, .card-cvv div {
+  font-size: 16px;
+}
+
+.card-stripe {
+  width: 100%;
+  height: 50px;
+  background: #000;
+  margin-bottom: 20px;
+}
+
+
+  
+
+   .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #e6c9ff, #000000); 
+  }
+  
+  .login-form {
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 600px) {
+    .login-form {
+      padding: 1rem;
+    }
+  }
+  
+  .active{
+    background-color: aqua;
+  }
+
+  .inactive{
+    background-color: rgb(255, 0, 242);
+
+  }
+  /* Custom Input and Button Styles */
+  .p-inputtext-lg {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  
+  .p-button-rounded {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  
+  @media (max-width: 600px) {
+    .p-inputtext-lg, .p-button-rounded {
+      font-size: 1rem;
+    }
+  }
+  
+
+  :host ::ng-deep .p-dialog {
+    width: 90vw;
+    max-width: 500px;
+    background-color: #000000;
+    z-index: 1px;
+  }
+  
+  :host ::ng-deep .p-dialog .p-dialog-content {
+    padding: 1.5rem;
+  }
+  
+
+  .landing-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('assets/background.jpg'); */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .landing-content {
+    text-align: center;
+    color: white;
+  
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+  
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  .logo {
+    width: 50px;
+    margin-right: 1rem;
+  }
+  
+  .p-menubar-custom ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  
+    li {
+      margin-right: 2rem;
+  
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  
+  .firstimage{
+    background-image: url(../../../../public/assets/sunrobot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .maincard{
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+  }

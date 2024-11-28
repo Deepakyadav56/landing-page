@@ -1,9 +1,11 @@
 .header-content {
+  font-size: 1rem;
+  font-family: "Bigshot One", serif;
   background-image: url("../../../../public/assets/Homepage.png");
   background-size: cover;
   background-position: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -64,4 +66,14 @@
   }
   
 
-  
+  /* landing-page.component.css */
+.hero {
+  background-image: url('../../../../public/assets/darkblackyellowrobot.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.feature {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
